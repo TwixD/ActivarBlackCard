@@ -1,0 +1,54 @@
+.indent-small {
+  margin-left: 5px;
+}
+.form-group.internal {
+  margin-bottom: 0;
+}
+.dialog-panel {
+  margin: 10px;
+}
+.datepicker-dropdown {
+  z-index: 200 !important;
+}
+.panel-body {
+  font: 600 15px "Open Sans", Arial, sans-serif;
+}
+label.control-label {
+  font-weight: 600;
+  color: #777;
+}
+.container{
+  opacity: 0.8;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.titulo{
+color: #0C8FED; 
+font-family: "Great Vibes", cursive;
+font-size: 165px; 
+line-height: 160px; 
+font-weight: normal; 
+margin-bottom: 0px; 
+margin-top: 40px; 
+text-align: center; 
+text-shadow: 0 1px 1px #fff;
+}
+
+.mensaje{
+color: #7a7c7f; 
+font-size: 29px; 
+font-family: "Libre Baskerville", serif; 
+line-height: 45px; 
+text-align: center; 
+text-shadow: 0 1px 1px #fff; 
+padding-top: 20px; 
+}
+
+.btn-success{
+  font-size: 29px; 
+}
