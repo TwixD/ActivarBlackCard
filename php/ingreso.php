@@ -1,5 +1,9 @@
 <?php
-$url = 'http://192.185.36.179/services/?BC=globalmx_activetarjetastep1&';
+ //Local;
+ //$ip = 'localhost';
+ //Produccion
+ $ip = '192.185.36.179';
+$url = 'http://'.$ip.'/services/?BC=globalmx_activetarjetastep1&';
 $fields = array(
 	'numTarjeta'=> $_POST["numTarjeta"],
 	'numPin'=> $_POST["numPin"]

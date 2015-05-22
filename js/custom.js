@@ -35,7 +35,10 @@ function eraseCookie(name) {
 }
 
  //Local;
+ //var ip = '127.0.0.1';
+ //Produccion
  var ip = '192.185.36.179';
+ $('#progress').hide();
  $('#divError').hide();
  $('.multiselect').multiselect();
  $('.datepicker').datepicker({
@@ -141,11 +144,12 @@ $("form").submit(function(){
                 url:   'php/active.php',
                 type:  'post',
                 beforeSend: function () {
-                	    //  $('#divError').show();
-                      //  $("#resultado").html("<img src='img/loading.gif'/>");
+                  $('#progress').show();
                 },
                 success:  function (response) {
+                  $('#progress').hide();
                         if(response == 1){
+                              $('#divError').hide();
                               eraseCookie("globalmaxclub");
                               bootbox.dialog({
                               title: '<img src="img/logoletra.png"/><br/>',
@@ -170,6 +174,9 @@ $("form").submit(function(){
                         }
                 },
                 error: function(){
+                              eraseCookie("globalmaxclub");
+                              $('#progress').hide();
+                              $('#divError').hide();
                               bootbox.dialog({
                               title: '<img src="img/logoletra.png"/><br/>',
                               message: '<div class="titulo">Ups!</div>'+
